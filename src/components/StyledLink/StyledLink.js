@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const L = styled.a`
-  color: #1976d2;
+const A = styled.a`
+  color: blue;
   text-decoration: none;
   cursor: pointer;
 
@@ -12,7 +12,7 @@ const L = styled.a`
 `;
 
 const StyledLink = props => {
-  return <L {...props}>{props.children}</L>;
+  return <A {...props}>{props.children}</A>;
 };
 
 export default StyledLink;

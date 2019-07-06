@@ -1,19 +1,15 @@
 import Link from 'next/link';
-import styled from 'styled-components';
-// import fetch from 'isomorphic-unfetch';
 
-const Title = styled.h1`
-  font-family: monospace;
-  font-size: 1.2em;
-`;
+import Layout from '../src/components/Layout/Layout';
+import StyledLink from '../src/components/StyledLink/StyledLink';
 
 const Index = () => (
-  <div>
-    <Title>Welcome to the index page</Title>
+  <Layout>
+    <h1>Welcome to the index page</h1>
     <Link href="/post/1">
-      <a>View Post</a>
+      <StyledLink>View Post</StyledLink>
     </Link>
-  </div>
+  </Layout>
 );
 
 export default Index;

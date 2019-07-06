@@ -1,0 +1,1 @@
+put static assets like images, favicon, etc here
